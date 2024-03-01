@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ant-switch .ant-switch-handle{
+  position: absolute;
+  top: 4px;
+  inset-inline-start: 3px;
+  width: 14px;
+  height: 14px;
+  transition: all 0.2s ease-in-out;
+}
+
+.ant-form-vertical .ant-form-item-label>label{
+  font-weight: 600;
+  font-family: inherit;
+}
+.ant-form-item .ant-form-item-control:first-child:not([class^="'ant-col-'"]):not([class*="' ant-col-'"]){
+  max-width: 100%;
+}
+.ant-form-item .ant-form-item-label >label::after{
+  content:"";
+}
+.ant-form-vertical .ant-form-item-label{
+  padding-bottom: 0;
+}
+.ant-form-vertical .ant-form-item-label >label{
+  margin: .1rem auto;
+  margin-bottom: 0;
+}
+
+.ant-form-item .ant-form-item-control-input{
+  min-height: 0;
+}
+
+.ant-radio-checked .ant-radio-inner:after{
+  background-color: #7c3aed;
+}
+
+
+.ant-checkbox .ant-checkbox-inner{
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 50%;
+  vertical-align: middle;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.ant-checkbox-enabled .ant-checkbox-checked .ant-checkbox-inner{
+  background-color: #7c3aed;
+}
+
+.ant-checkbox-disabled .ant-checkbox-checked .ant-checkbox-inner{
+  background-color: #7c3aed;
+  opacity: .5;
+
+}
+.ant-checkbox-checked .ant-checkbox-inner:after {
+  display: none;
+}
+.ant-btn{
+  font-size: 17px;
+  height: 3rem;
+  width: 10rem;
+  color: white;
+  left: 26%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
